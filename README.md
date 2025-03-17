@@ -3,7 +3,7 @@ Backend contributions stay in this repo
 
 # PetMedTrack Backend
 
-The backend for the **PetMedTrack** application, built with [Node.js](https://nodejs.org/) and [Express](https://expressjs.com/). This server handles API requests, interacts with the blockchain, and manages data for the frontend and mobile app.
+The backend for the **PetMedTrack** application, built with [Node.js](https://nodejs.org/) and [Express](https://expressjs.com/). This server handles API requests, interacts with the blockchain, and manages data 
 
 ---
 
