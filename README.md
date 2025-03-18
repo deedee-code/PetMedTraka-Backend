@@ -8,17 +8,12 @@ The backend for the **PetMedTrack** application, built with [Node.js](https://no
 ---
 
 ## Technologies Used
-- **Runtime**: Node.js
-- **Framework**: Express
-- **Database**: MongoDB (or your chosen database)
-- **Blockchain Integration**: StarkNet (via `starknet.js`)
-- **Authentication**: JWT (JSON Web Tokens)
-- **Environment Management**: dotenv
-- **Testing**: Jest, Supertest
-- **Linting**: ESLint
-- **Formatting**: Prettier
 
----
+- Backend:** NestJS (TypeScript), Mongoose (MongoDB ORM)  
+- **Blockchain:** StarkNet (Immutable storage)  
+- **Authentication:** JWT & Role-Based Access Control (RBAC)  
+- **Data Storage:** MongoDB (NoSQL)  
+- **Scanning:** QRCode integration  
 
 ## Setup Instructions
 
