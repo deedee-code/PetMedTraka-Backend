@@ -11,7 +11,7 @@ export const DatabaseProviders = [
       const retryConnect = async (attempt = 1): Promise<Connection> => {
         try {
           const connection = createConnection(dbConfig.uri, dbConfig.options);
-          await connection.asPromise(); // Wait for the connection to be ready
+          await connection.asPromise(); // Wait for the connection to0 be readyy
           console.log('Successfully connected to MongoDB.');
           return connection;
         } catch (error) {
