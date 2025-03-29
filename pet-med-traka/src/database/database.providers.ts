@@ -14,10 +14,12 @@ export const DatabaseProviders = [
           await connection.asPromise(); // Wait for the connection to0 be readyy
           console.log('Successfully connected to MongoDB.');
           return connection;
-        } catch (error) {
+        } catch (error: unknown) {
           if (attempt === dbConfig.retry.retries) {
+            const errorMessage =
+              error instanceof Error ? error.message : 'Unknown error';
             throw new Error(
-              `Failed to connect to MongoDB after ${attempt} attempts: ${error.message}`,
+              `Failed to connect to MongoDB after ${attempt} attempts: ${errorMessage}`,
             );
           }
           console.log(

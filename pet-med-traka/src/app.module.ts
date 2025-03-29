@@ -6,6 +6,7 @@ import { DatabaseModule } from './database/database.module';
 import { HealthModule } from './health/health.module';
 import databaseConfig from './config/database.config';
 import { CustomLogger } from './logger/logger.service';
+import { UsersModule } from './modules/users/users.module';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { CustomLogger } from './logger/logger.service';
     }),
     DatabaseModule,
     HealthModule,
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService, { provide: 'Logger', useClass: CustomLogger }],
